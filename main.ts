@@ -1,0 +1,2 @@
+
+Deno.serve(.get('asd'));
