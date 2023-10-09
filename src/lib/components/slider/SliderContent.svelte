@@ -19,7 +19,7 @@
 <div class=" ">
     <div class="flex flex-col">
         <button
-            class="bg-gray-600/50 p-3 rounded-lg w-full flex"
+            class="bg-gray-600/50 p-2.5 rounded-lg w-full flex"
             on:click={showActive}><slot name="title" /></button
         >
         {#if show}

@@ -12,8 +12,12 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
+		"@tailwindcss/forms": "^0.5.6",
+		"@tailwindcss/typography": "^0.5.10",
 		"autoprefixer": "^10.4.15",
+		"less": "^4.2.0",
 		"postcss": "^8.4.29",
+		"postcss-nesting": "^12.0.1",
 		"sass": "^1.68.0",
 		"svelte": "^4.0.5",
 		"svelte-check": "^3.4.3",
@@ -22,5 +26,9 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"three": "^0.157.0",
+		"threejs-toys": "^0.0.8"
+	}
 }

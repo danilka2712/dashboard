@@ -25,52 +25,12 @@
         },
     ];
     let tableContent = [
-        {
-            username: "вфывыфвыфв",
-            firstname: "Название1",
-            content:
-                "asdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsa",
-            data: "27.12.19997 сегодня",
-            id: 1,
-        },
-        {
-            username: "ыфвыфвыфв",
-            firstname: "Название2",
-            content:
-                "asdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsa",
-            data: "27.12.19997 сегодня",
-            id: 2,
-        },
-        {
-            username: "фывфывыф",
-            firstname: "Название3",
-            content:
-                "asdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsa",
-            data: "27.12.19997 сегодня",
-            id: 3,
-        },
-        {
-            username: "ыфвыфв",
-            firstname: "Название4",
-            content:
-                "asdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsaasdsadsadsdsadsadsa",
-            data: "27.12.19997 сегодня",
-            id: 4,
-        },
-        {
-            username: "sadsфывыфвad",
-            firstname: "Название5",
-            content: "",
-            data: "27.12.19997 сегодня",
-            id: 5,
-        },
-        {
-            username: "фывыфв",
-            firstname: "Название6",
-            content: "asdsadsadsdsadsadsa",
-            data: "27.12.19997 сегодня",
-            id: 6,
-        },
+        { username: "sadsad", firstname: "Название1", id: 1 },
+        { username: "sadsad", firstname: "Название2", id: 2 },
+        { username: "sadsad", firstname: "Название3", id: 3 },
+        { username: "sadsad", firstname: "Название4", id: 4 },
+        { username: "sadsad", firstname: "Название5", id: 5 },
+        { username: "sadsad", firstname: "Название6", id: 6 },
     ];
     setContext("table", schema);
     setContext("tableContent", tableContent);
