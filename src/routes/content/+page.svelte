@@ -34,6 +34,16 @@
     ];
     setContext("table", schema);
     setContext("tableContent", tableContent);
+    let search = "";
 </script>
 
-<Table />
+<h1>Контент</h1>
+<div class="p-8">
+    <input
+        placeholder="Searce result own retyu..."
+        class="p-2.5 px-12 w-full rounded-full bg-hover"
+        type="text"
+        bind:value={search}
+    />
+</div>
+<Table {search} />

@@ -3,26 +3,27 @@
 @tailwind utilities;
 
 
-html,body {
+html,
+body {
 
-    font-family: 'Source Sans 3', sans-serif; 
+    font-family: 'Source Sans 3', sans-serif;
     color: white;
 }
 
 
-    :root {
-        --primary-color: #102A43;
-        --secondary: #627D98;
-        --success-color: #27AB83;
-        --warning-color: #F0B429;
-        --danger-color: #E12D39;
+:root {
+    --primary-color: #102A43;
+    --secondary: #627D98;
+    --success-color: #27AB83;
+    --warning-color: #F0B429;
+    --danger-color: #E12D39;
 
-        --text-base: 14.5px;
-        --bg-base: #F0F4F8;
-        --hover: #D9E2EC;
-        --border: #9fb3c876;
-    }
-  
+    --text-base: 14.5px;
+    --bg-base: #F0F4F8;
+    --hover: #D9E2EC;
+    --border: #9fb3c876;
+}
+
 ::-webkit-scrollbar {
     height: 4px;
     width: 4px;

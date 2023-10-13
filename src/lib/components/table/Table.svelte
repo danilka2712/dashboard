@@ -39,11 +39,10 @@
     let show = false;
 </script>
 
-<button on:click={() => (show = true)}>Закрыть</button>
-
+{search}
 {#if show}
     <div
-        transition:fade={{ duration: 250 }}
+        transition:fade={{ duration: 150 }}
         class="flex justify-end absolute w-full h-screen top-0 left-0 bg-black/10"
     >
         <div
