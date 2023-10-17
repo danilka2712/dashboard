@@ -16,7 +16,7 @@ export default {
         "success": "var(--success-color)",
         "warning": "var(--warning-color)",
         "danger": "var(--danger-color)",
-        "secondary": "var(--secondary)"
+        "secondary": "var(--secondary)",
       },
 
     }
