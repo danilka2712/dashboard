@@ -2,10 +2,10 @@
     import { page } from "$app/stores";
 
     let navItems = [
-        { name: "Статистика", href: "/" },
-        { name: "Контент", href: "/content" },
-        { name: "Контент", href: "/content" },
-        { name: "Контент", href: "/content" },
+        { name: "Основное", href: "/" },
+        { name: "Информация", href: "/content" },
+        { name: "События", href: "/content" },
+        { name: "Новости", href: "/content" },
     ];
 </script>
 

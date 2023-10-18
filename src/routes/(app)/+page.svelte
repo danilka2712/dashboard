@@ -20,29 +20,36 @@
             date: "30.10.2023",
         },
     ];
+    let data = new Date().toLocaleDateString();
 
+    function handleMessage(event: CustomEvent) {
+        data = event.detail.text;
+    }
     function addTask(id) {
         if (tasks.length >= 4) return;
         if (newNameTask.length < 2) return;
-        let news = { id: id, name: newNameTask, status: false };
+        let news = {
+            id: id,
+            name: newNameTask,
+            status: false,
+            date: data,
+        };
         tasks.push(news);
         newNameTask = "";
         tasks = tasks;
     }
 
     let newNameTask = "";
-
-    let data = new Date().toLocaleDateString();
-
-    function handleMessage(event: CustomEvent) {
-        data = event.detail.text;
-    }
 </script>
 
 <div class="flex flex-col gap-8 mt-12">
-    <div class="flex justify-between h-24 p-6 bg-white rounded-lg shadow-sm">
-        <div>1</div>
-        <div>1</div>
+    <div class="flex justify-between p-6 px-14 bg-white rounded-lg shadow-sm">
+        {#each analytics as analytic, i}
+            <div>
+                <p>{analytic.name}</p>
+                <p class=" text-2xl font-semibold">{analytic.quantity}</p>
+            </div>
+        {/each}
     </div>
     <div class="flex flex-row space-x-8">
         <div class="p-6 bg-white rounded-lg basis-2/3">
@@ -77,6 +84,13 @@
                                         </li>
                                     </div>
                                 {/each}
+                                {#if tasks.filter((task) => task.date === data).length === 0}
+                                    <div>
+                                        <p class="text-center text-secondary">
+                                            Задач на сегодня нет
+                                        </p>
+                                    </div>
+                                {/if}
                             </ul>
                         </div>
                         <form class="flex flex-col gap-2">
